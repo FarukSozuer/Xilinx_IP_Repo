@@ -1,0 +1,1742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>TRN_CHNNL_CMBNR</spirit:name>
+  <spirit:version>1.5</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_BUSIF">M00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_RESET">m00_axis_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>TRN_CHNNL_CMBNR_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>2c29a7a4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>TRN_CHNNL_CMBNR_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>2c29a7a4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f4b16c00</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>84f10196</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_0</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_2</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_3</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_4</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_5</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_6</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_7</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_noise</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_0_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_1_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_2_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_3_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_4_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_5_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_6_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chn_7_invld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:order="9" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_af38333b</spirit:name>
+      <spirit:enumeration>16</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/TRN_CHNNL_CMBNR_v1_0_M00_AXIS.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/TRN_CHNNL_CMBNR_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/TRN_CHNNL_CMBNR_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_75d4d288</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/TRN_CHNNL_CMBNR_v1_0_M00_AXIS.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/TRN_CHNNL_CMBNR_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/TRN_CHNNL_CMBNR_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/TRN_CHNNL_CMBNR_v1_0/data/TRN_CHNNL_CMBNR.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/TRN_CHNNL_CMBNR_v1_0/data/TRN_CHNNL_CMBNR.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/TRN_CHNNL_CMBNR_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/TRN_CHNNL_CMBNR_v1_0/src/TRN_CHNNL_CMBNR.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/TRN_CHNNL_CMBNR_v1_0/src/TRN_CHNNL_CMBNR.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/TRN_CHNNL_CMBNR_v1_0/src/TRN_CHNNL_CMBNR_selftest.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/TRN_CHNNL_CMBNR_v1_5.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_84f10196</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>This IP combines up to 8 stream channel and combine them as normalized</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_af38333b" spirit:order="9">16</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">TRN_CHNNL_CMBNR_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>TRN_CHNNL_CMBNR_v1.5</xilinx:displayName>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:TRN_CHNNL_CMBNR:1.0</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:TRN_CHNNL_CMBNR:1.1</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:TRN_CHNNL_CMBNR:1.2</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:TRN_CHNNL_CMBNR:1.3</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:TRN_CHNNL_CMBNR:1.4</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2023-02-17T18:43:32Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a30bce2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40a0500c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e62426_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fc37a6e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34896b70_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@136ba941_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23f2b2c5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@516ec375_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54555d7_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d24ad69_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ffcd1fc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c95ea21_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28a79cce_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5be3b633_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@309bb42b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62452fc6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56ed4eaa_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66ff75d4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fc6898d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57544d26_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f56c525_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40102b4a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10d2c02a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46018488_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22091c88_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17e8944b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22938077_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f478cbf_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@aba66a9_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@508927e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64507e26_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2061c2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57bad4d7_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12b2e6e9_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ed8a732_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67eca05c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7392a9f3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@653967cc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b3894d4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@21c732a3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@292a7b9a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f12a4c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20e94cb1_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2031ea97_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51eafa3b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54b0ab6f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76057937_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@302edfcd_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67c240d0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@315679fc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c89a8c0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24c29001_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b6b58b1_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13106b2d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@400d5879_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@107704ff_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e598fb0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23723d52_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e1ee192_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4fce141c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@137685f0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79e15b00_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c4b2000_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ea8feaa_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@679aa74_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69175cff_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c74b9a1_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46f22610_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f0cba3b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ef83841_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15928f0a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17d91aca_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70c4da99_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6173fb6d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1101a610_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f626672_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50a050a3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42ac98a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@142caf51_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23c42b84_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a82b670_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f0bff28_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1776edbb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18d0f74b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68fd85ba_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bd0e90b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43250d0f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@cc4238b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@576943c6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45a46ffe_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2dd822a3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24ad4c57_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b01c355_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e48a86_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5364d613_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@398b74c4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c64709e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36ad39e4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6570fc25_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49246a26_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37368b7a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42b6236a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@754f0933_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b12e92f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58066f7d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32fa7e82_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2256c001_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f7698aa_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51ebac78_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fe2f7e2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3147996b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d6691dc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b1b6524_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56acb6af_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ddd7df4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49f0bbfa_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fea56b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@de60364_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4db5bc12_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28615699_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@578c822c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14a30450_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3446fe22_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c6d73c3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54168702_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79c65c02_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59621910_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35cd2c7d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15b646d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2418f83_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c0df129_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@127616eb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c3f3f6e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@125995c0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77f24566_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@221cc4b2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@325b2ed4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58639f14_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fcb46b0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ae638a2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@332f20a0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ca84d4c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f0d44b5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43443b04_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5aedd143_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11203d43_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d22b53a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@456a7fc5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@313ad9c9_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59ffa1e4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72f9fd17_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68673b8e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d755973_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@407e1063_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@645a8074_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13f71a90_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19e6bf83_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76cf39d6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35d1f965_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4fa020e4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75c1e456_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5122f3b5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e5e2d20_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78c74d4a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@570adc31_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57f2e4af_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e4111e6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72f349ab_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3507b8e2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e722729_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fe107b3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f9a9b17_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11ad148a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20ace712_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47a4a2c6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8d70364_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c94ecbb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@347c7873_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46abb70c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c208afa_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14265ad3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bd76792_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13602bb5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3871b11e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@536bc3a9_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1de3e543_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@522dc241_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b32a02c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44bf5e7c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13d25390_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a5a6dfa_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bf6f4a3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14d77811_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2adca243_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1314035f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5df348ff_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60e7a962_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36675e5c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@575aad96_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d902876_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@518c11f4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b99c623_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2955ea4a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59ebbac2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15f2c655_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e8df247_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@314f56d8_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73e161d4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@21d5fa3d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2084a27a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c54d5cf_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5fdf02c6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@211e30f0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3632f287_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@673e6016_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e27ba3a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8bfaee_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b9c9ac5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35567262_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@199ef54f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4666498b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1589fb73_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@400b7cdc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d06d020_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62a86b71_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5fee5f4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c4d8696_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28d59bac_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b311bbe_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c911bcf_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b4228f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e2f26b6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dc9753b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36a45c11_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@240572c7_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@242dba9a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78a488d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2921204e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d494106_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2567e378_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d462d4b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34740868_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c211f05_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@31e660e5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50632ed4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@787fdcd6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49bd104c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@291dc8fc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@111796c2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@656d8b3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@449d592d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/V3.6/PL/ip_repo/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2803fe8_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6376dac5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28fbac9d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17191c8d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a29a28f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29dc35ab_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d39947b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3617636e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@408983dd_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18850b27_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a62f8dc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44a4a7fe_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a16fdeb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fcc4ce4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c95a779_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e213454_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@108d414a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@33983cd8_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f1d8481_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46afa430_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@16243925_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d1681fb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ddb2ea1_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f0a88ce_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f78514c_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e130de_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12d2984_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c70ae46_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fe95fb0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67e7c5e7_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f38d704_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a7e2424_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7fc25bfb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6da4c3f8_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15f546ae_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48b50d39_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1bb3ef61_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@378b0e5_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d516ca6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@420a2bff_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2c28036f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6bd14289_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1a71ff3_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@721a0d3d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@bd70f5b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4669de95_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b2928b6_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a69f947_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ab00abc_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ebb189_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@25227539_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7785f8a_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@bd1bdeb_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75ee3698_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72409d0b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@114292bf_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b456ca2_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@638398b0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5963bbdd_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1bb04018_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59e994ca_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f02afbf_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@405fbe04_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40226bc0_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4753df3e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11a2c69f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6cb56ff4_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e2f1c28_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@621e2c82_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a6692e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@678d1f64_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13a5b79f_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@459bb04b_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43c3d731_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69ce588d_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c67bc91_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b35c639_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74301463_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@513f578e_ARCHIVE_LOCATION">c:/Users/Matlap/Desktop/Workspace_FPGA/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a6a572_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@475e3680_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1da947f8_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2a23c285_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23836fdf_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b041c31_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4def136a_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@505c8f27_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7515d953_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f0c2a54_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@303c9bb2_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39ec0069_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e22c40b_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22b557e5_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71f7adfe_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3bf99c2d_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14309d8_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5bf1a569_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6bb35139_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e580507_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f58c9db_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@261ea8da_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6dcb538c_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f1347a2_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4cea86e_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78cf14d9_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@464747c8_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29e11cb8_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52b496d5_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4828b322_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a8672e3_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ed53e52_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55fe67db_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40f2fd1b_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b6c412d_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30931593_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a001218_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f38731f_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ccbde2e_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a9089e9_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3fb88e53_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d40d2ae_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4006b41a_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3785ad28_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d2d768a_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56958783_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35290fc1_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5de1337b_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6eed0e23_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@267f2f94_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17985f91_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6929e734_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f219189_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@310abf30_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76354038_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6be26342_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70824426_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@576529a4_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@654cf80_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6507a1d8_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62eee10e_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b7e12f2_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6bc7f77d_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23df34f3_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6472344d_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@457e285d_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17ca30d4_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a5ca23c_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2ca99d3c_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52f74cd1_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4daaf6a4_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2823e812_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a4706f1_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@15ca1135_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49db618a_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30ece612_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11db0770_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@300fd708_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34f562f4_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56bbad9f_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4dfe3327_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1bfba3ec_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62370f93_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e442111_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26df67e5_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54f8647c_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@429051f6_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@601ee25c_ARCHIVE_LOCATION">c:/Xilinx_IP_Repo_Timing/TRN_CHNNL_CMBNR_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.1.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4149809a"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a24308f2"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="88122899"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5810ed2f"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="5cf54e59"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

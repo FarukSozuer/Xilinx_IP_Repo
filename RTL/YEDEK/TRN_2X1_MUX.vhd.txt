@@ -1,0 +1,78 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+
+entity TRN_2X1_MUX is
+generic
+(
+	DATA_WIDTH : integer := 30
+);
+Port ( 
+
+	clk : in std_logic;
+	chn1_data_in_i: in std_logic_vector(DATA_WIDTH-1 downto 0);
+	chn1_data_in_q: in std_logic_vector(DATA_WIDTH-1 downto 0);
+	chn2_data_in_i: in std_logic_vector(DATA_WIDTH-1 downto 0);
+	chn2_data_in_q: in std_logic_vector(DATA_WIDTH-1 downto 0);
+	data_out : out std_logic_vector(DATA_WIDTH-1 downto 0);
+	
+	chn1_i_data_ready : out std_logic;
+	chn1_q_data_ready : out std_logic;
+	chn2_i_data_ready : out std_logic;
+	chn2_q_data_ready : out std_logic;
+	
+	chn1_pwr_rdct_in     : in std_logic_vector(5 downto 0);
+	chn2_pwr_rdct_in     : in std_logic_vector(5 downto 0);
+	
+	pwr_rdct_out     : out std_logic_vector(5 downto 0)
+);
+end TRN_2X1_MUX;
+
+architecture Behavioral of TRN_2X1_MUX is
+   signal data_selection : std_logic_vector(1 downto 0) := (others => '0');
+begin
+	
+	P_PORT_SWTICH:process(clk) begin
+		if rising_edge(clk) then				
+			data_selection <= std_logic_vector(unsigned(data_selection) + 1);
+						
+			case (data_selection) is
+				when "00" => -- ch1 i data selected
+					data_out <= chn1_data_in_i;
+					pwr_rdct_out <= chn1_pwr_rdct_in;
+					chn1_i_data_ready <= '1';
+					chn1_q_data_ready <= '0';
+					chn2_i_data_ready <= '0';
+					chn2_q_data_ready <= '0';
+				when "01" => -- ch1 q data selected
+					data_out <= chn1_data_in_q;
+					pwr_rdct_out <= chn1_pwr_rdct_in;
+					chn1_i_data_ready <= '0';
+					chn1_q_data_ready <= '1';
+					chn2_i_data_ready <= '0';
+					chn2_q_data_ready <= '0';
+					
+				when "10" =>
+					data_out <= chn2_data_in_i;
+					pwr_rdct_out <= chn2_pwr_rdct_in;
+					chn1_i_data_ready <= '0';
+					chn1_q_data_ready <= '0';
+					chn2_i_data_ready <= '1';
+					chn2_q_data_ready <= '0';
+				when "11" =>
+					data_out <= chn2_data_in_q;
+					pwr_rdct_out <= chn2_pwr_rdct_in;
+					chn1_i_data_ready <= '0';
+					chn1_q_data_ready <= '0';
+					chn2_i_data_ready <= '0';
+					chn2_q_data_ready <= '1';
+					
+					data_selection <= "00";
+				when others =>
+				-- todo
+			end case;
+	    end if;		
+	end process P_PORT_SWTICH;
+
+end Behavioral;

@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity TRN_READ_FREQ is
+    port (
+        clk : in  std_logic;
+		reset : in std_logic;
+        data_in : in  std_logic;
+        data_out : out std_logic_vector(15 downto 0)
+    );
+end TRN_READ_FREQ;
+
+architecture Behavioral of TRN_READ_FREQ is
+    signal counter : integer range 0 to 15 := 0;
+    signal last_clock : std_logic := '0'; -- 0
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) and last_clock = '0' then
+			if reset = '0' then
+					counter <= 0;
+					data_out  <= (others => '0');
+				else 
+					if counter < 15  then
+						data_out(counter) <= data_in;
+						counter <= counter +1 ;
+					else
+						data_out(counter) <= data_in;
+						counter <= 0;
+					end if;
+			end if;
+		last_clock <= clk;
+		end if;     
+    end process;
+end Behavioral;

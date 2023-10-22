@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar  2 18:06:18 2023
+# Process ID: 16404
+# Current directory: C:/Users/f.sozuer/Desktop/ad_hdl_dir/library/axi_ad9361
+# Command line: vivado.exe -mode batch -source C:/Users/f.sozuer/Desktop/ad_hdl_dir/library/axi_ad9361/axi_ad9361_ip.tcl
+# Log file: C:/Users/f.sozuer/Desktop/ad_hdl_dir/library/axi_ad9361/vivado.log
+# Journal file: C:/Users/f.sozuer/Desktop/ad_hdl_dir/library/axi_ad9361\vivado.jou
+#-----------------------------------------------------------
+source C:/Users/f.sozuer/Desktop/ad_hdl_dir/library/axi_ad9361/axi_ad9361_ip.tcl

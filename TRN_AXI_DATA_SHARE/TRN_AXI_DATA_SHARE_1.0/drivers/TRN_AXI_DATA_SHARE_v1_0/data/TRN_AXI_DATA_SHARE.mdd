@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER TRN_AXI_DATA_SHARE
+	OPTION supported_peripherals = (TRN_AXI_DATA_SHARE);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = TRN_AXI_DATA_SHARE;
+END DRIVER
